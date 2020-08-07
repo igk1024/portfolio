@@ -3,6 +3,11 @@
 ## Description
 This website is a portfolio of my work samples.
 
+### Portfolio
+*About Me
+*Past Work
+*Contact Information
+
 ## Acceptance Criteria
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
