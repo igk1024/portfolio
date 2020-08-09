@@ -25,6 +25,12 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
+<h2>Deployed URL</h2>
+<a href="https://igk1024.github.io/portfolio/" target="_blank">Professional Portfolio</a>
+
+<h2>GitHub Repository URL</h2>
+<a href="https://github.com/igk1024/portfolio" target="_blank">GitHub.com/igk1024/portfolio</a>
+
 ## Mock-Up
 The following animation shows the web application's appearance and functionality:
-
+<img src="/assets/images/professional-portfolio.gif">
