@@ -17,7 +17,6 @@ p {
   margin-bottom: 10px;
 }
 
-
 /* --- Header style start --- */
 
 header {
@@ -91,25 +90,27 @@ float: right;
 
 section {
   padding: 20px 30px;
-  display: flex;
-  flex-wrap:flex;
-  align-items: center;
-  justify-content: space-between; 
 }
 
-section h2 {
+/*section h2 {
   margin-bottom: 10px;
   flex: 1 20%;
+}*/
+
+.content h2 {
+  flex: 2 10%;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .content {
-  margin: 0px auto 10px auto;
-  padding-bottom: 20px;
+  margin: auto;
+  padding-bottom: 10px;
   width: 80%;
   border-bottom: 4px solid lightcoral;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+ /* justify-content: space-between;*/
 }
 
 .content-info {
@@ -117,7 +118,17 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  /*justify-content: space-between;*/
 }
+
+/*.content-info img {
+  margin-bottom: 20px;
+  float:right;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid lightgray;
+  border-radius: 15%;
+}*/
 
 /* --- About style start --- */
 .about {
@@ -128,30 +139,31 @@ section h2 {
   margin-top: 30px;
 }
 
-
 .about img {
   margin-bottom: 20px;
   float:right;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-right: 20px;
-}
+  border-radius: 15%;
+  border: 1px solid lightgray;
+} 
 
 /* --- Projects style start --- */
 
 .grid-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  width:85%;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  width: 80%;
+  width: 100%;
   grid-gap: 20px;
   grid-auto-flow: dense;
 }
-
 
 .grid-item span {
 text-align: center;
@@ -169,6 +181,7 @@ color: black;
   display: block;
   padding: 5px;
   color: black;
+  border-radius: 5px 20px 5px;
   }
 
 .grid-item:hover {
@@ -177,6 +190,7 @@ color: black;
 
 .grid-item {
   border: 1px solid lightgray;
+  border-radius: 5px 20px 5px;
 }
 
 .grid-item.horiseon {
@@ -213,7 +227,6 @@ color: black;
   justify-content: center;
   object-fit: cover;
 }
-
 
 /* --- Contact style start --- */
 
@@ -260,7 +273,7 @@ color: whitesmoke;
 
 
 /* --- Media query styles --- */
-
+/* --- Media query style - under 980px --- */
 @media screen and (max-width: 980px) {
   header {
       padding-bottom: 0;   
@@ -286,14 +299,32 @@ color: whitesmoke;
   .about p {
     margin-left: 5px;
   }
+
+  .content h2 {
+    margin-right: 10px;
+  }
+
+  .content { 
+    width: 90%;
+  }
+
+  .grid-wrapper {
+    width: 85%;
+  }
+
 }
-/* Media query style for tablets and smaller than 768. */
+
+/* --- Media query style - under 768px --- */
 @media screen and (max-width: 768px) {
   
   .grid-container {
       grid-template-columns: 1fr;
       grid-template-rows: 6fr;
       width:100%;
+  }
+
+  .grid-wrapper {
+    width: 95%;
   }
 
   .grid-item {
