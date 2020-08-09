@@ -5,9 +5,18 @@
 }
 
 body {
-  background-color: lightgray;
+  background-color: whitesmoke;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+a:link {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
 
 /* --- Header style start --- */
 
@@ -73,7 +82,7 @@ float: right;
 .hero-subtitle h2 {
   color: #2E2D46;
   font-size: 18px;
-  border: none;
+  text-shadow: 2px 2px whitesmoke;
 }
 
 /* --- Hero style end --- */
@@ -143,22 +152,37 @@ section h2 {
   grid-auto-flow: dense;
 }
 
-.grid-item h3 {
+
+.grid-item span {
+text-align: center;
+background-color: whitesmoke;
+width: 100%;
+display: block;
+padding: 5px;
+color: black;
+}
+
+.grid-item a {
   text-align: center;
-  background-color: white;
+  background-color: whitesmoke;
   width: 100%;
   display: block;
   padding: 5px;
-  color:lightcoral;
+  color: black;
+  }
+
+.grid-item:hover {
+  background-color:(240, 240, 240);opacity:0.6;
 }
 
 .grid-item {
-  border: 1px solid darkgray;
+  border: 1px solid lightgray;
 }
 
 .grid-item.horiseon {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+  justify-content: center;
   object-fit: cover;
 }
 
@@ -210,6 +234,10 @@ section h2 {
   color: black;
 }
 
+.contact ul li a:hover {
+  color: coral;
+}
+
 /* --- Footer style start --- */
 footer {
   background-color: #2E2D46;
@@ -221,6 +249,11 @@ footer h4 {
   color: darkgray;
   font-size: 13px;
   font-weight:normal;
+}
+
+footer a {
+color: whitesmoke;
+
 }
 
 /* --- Footer style end --- */
@@ -258,8 +291,9 @@ footer h4 {
 @media screen and (max-width: 768px) {
   
   .grid-container {
-      grid-template-columns: 1fr;   /* create 1 column */
+      grid-template-columns: 1fr;
       grid-template-rows: 6fr;
+      width:100%;
   }
 
   .grid-item {
@@ -268,6 +302,7 @@ footer h4 {
 
   .grid-item.horiseon {
       grid-row: 1;
+      grid-column: 1;
   }
 
   .grid-item.runbuddy {
