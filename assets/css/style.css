@@ -167,7 +167,7 @@ section {
 
 .grid-item span {
 text-align: center;
-background-color: whitesmoke;
+/*background-color: whitesmoke;*/
 width: 100%;
 display: block;
 padding: 5px;
@@ -176,8 +176,8 @@ color: black;
 
 .grid-item a {
   text-align: center;
-  background-color: whitesmoke;
-  width: 100%;
+/*background-color: whitesmoke;*/
+width: 100%;
   display: block;
   padding: 5px;
   color: black;
@@ -212,6 +212,8 @@ color: black;
   grid-row: 2 / span 1;
   justify-content: center;
   object-fit: cover;
+  background-image: url(../images/placeholder.png);
+  background-size: 100% 100%;
 }
 
 .grid-item.project4 {
@@ -219,6 +221,8 @@ color: black;
   grid-row: 3 /  span 1;
   justify-content: center;
   object-fit: cover;
+  background-image: url(../images/placeholder.png);
+  background-size: 100% 100%;
 }
 
 .grid-item.project5 {
@@ -226,6 +230,8 @@ color: black;
   grid-row: 3 /  span 1;
   justify-content: center;
   object-fit: cover;
+  background-image: url(../images/placeholder.png);
+  background-size: 100% 100%;
 }
 
 /* --- Contact style start --- */
@@ -312,6 +318,26 @@ color: whitesmoke;
     width: 85%;
   }
 
+  .grid-item.project3 {
+    background-image: url(../images/placeholder.png);
+    height:100%;
+  }
+
+  .grid-item.project4  {
+    background-image: url(../images/placeholder.png);
+    height:100%;
+  }
+  
+  .grid-item.project5 {
+    background-image: url(../images/placeholder.png);
+    height:100%;
+  }
+
+  .grid-item {
+    border: 1px solid lightgray;
+    border-radius: 5px 20px 5px;
+  }
+
 }
 
 /* --- Media query style - under 768px --- */
@@ -344,17 +370,21 @@ color: whitesmoke;
   .grid-item.project3 {
       grid-column: 1;
       grid-row: 3;
+      height: 200px;
   }
 
   .grid-item.project4 {
       grid-column: 1;
       grid-row: 4;
+      height: 200px;
   }
 
   .grid-item.project5 {
       grid-column: 1;
-      grid-row: 5
+      grid-row: 5;
+      height: 200px;
   }
+
   .contact ul li {
     margin-top: 10px;
   }
@@ -362,5 +392,4 @@ color: whitesmoke;
   .contact ul {
     margin-left: 10px;
   }
-
 } 
